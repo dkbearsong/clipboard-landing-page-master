@@ -1,0 +1,252 @@
+/* HTML */
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+}
+.bod-container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* Main */
+.body-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.corp-logo {
+  margin: 125px 50px 25px 50px;
+}
+.part-logo {
+  margin: 25px 50px 50px;
+}
+.snippets {
+  margin-top: 100px;
+}
+
+.comp-right {
+  width: 380px;
+  margin-top: 50px;
+}
+#computer-pic {
+  position: relative;
+  right: 160px;
+  width: 55%;
+  vertical-align: top;
+}
+.list-icon {
+  height: 44px;
+}
+
+
+/* Footer */
+li {
+  display: inline;
+  list-style-type: none;
+  width: 225px;
+  height: 50px;
+  padding: 16px 0;
+}
+.flex-box-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100px;
+  width: 900px;
+}
+.foot-logo {
+  height: 55px;
+  margin: 6.5px 85px 22.5px;
+  width: 55px
+}
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.footer-icon-div{
+  display: inline-block;
+  position: absolute;
+  right: 150px;
+  bottom: 100px;
+}
+.footer-icon {
+  margin: 10px;
+}
+.footer-icon:hover {
+  color: hsl(171, 66%, 44%);
+  opacity: 1;
+}
+
+/* Globals */
+h1, h2, h3 {
+  font-weight: 600;
+  opacity: 0.7;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 23px;
+  margin: 36px 0 0 0;
+}
+p {
+  font-weight: 400;
+  line-height: 1.75;
+  margin-top: 12px;
+  opacity: 0.4;
+}
+
+a:link {
+  color: black;
+  font-weight: 400;
+  opacity: 0.7;
+  text-decoration: none;
+}
+li:hover {
+  color: hsl(171, 66%, 44%);
+  opacity: 1;
+}
+
+.p-w-42p {
+  width: 42%;
+}
+.p-w-48p {
+  width: 48%;
+}
+.button-container {
+  margin: 50px auto;
+}
+.button {
+  border-radius: 25px;
+  border-style: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  margin: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: none;
+}
+.button-ios {
+  background-color: hsl(171, 66%, 44%);
+}
+.button-mac {
+  background-color: hsl(233, 100%, 69%);
+}
+.ib {
+  display: inline-block;
+}
+.tr {
+  text-align: left;
+}
+.w-54 {
+  width: 54%;
+}
+.mar-cen {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mar-50px {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.mar-75px {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.mar-100px {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.wid-80pc{
+  width: 80%;
+}
+.vert-align-mid {
+  vertical-align: middle;
+}
+.grid-container {
+  display: grid;
+}
+.gc-3 {
+  grid-column-gap: 25px;
+  grid-template-columns: auto auto auto;
+  margin: 50px;
+  grid-column-gap: 10px;
+}
+
+
+
+@media (max-width: 720px) {
+  .bod-container {
+    max-width: 375px;
+  }
+  /* main */
+  .p-w-42p, .p-w-48p {
+    width: 92%;
+  }
+  .tr {
+    text-align: center;
+  }
+  .dev-pic {
+    width: 90%
+  }
+  .gc-3 {
+    grid-template-columns: auto;
+  }
+  #computer-pic {
+    right: 0;
+    width: 300px;
+  }
+  .button {
+    width: 90%;
+  }
+  .comp-right {
+    width: 342px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+  }
+
+  /* footer */
+  ul {
+    padding-inline-start: 0;
+  }
+  .foot-logo {
+    margin: 6.5px 160px 22.5px;
+  }
+  .flex-box-col {
+    display: grid;
+    grid-template-columns: auto;
+    height: 100%;
+    width: 375px;
+  }
+  .footer-icon-div {
+    display: block;
+    position: static;
+  }
+
+  /* global */
+  .mar-cen{
+    margin:0;
+  }
+  .mob-marbot-45px {
+    margin-bottom: 45px;
+  }
+  .mob-martop-45px {
+    margin-top: 45px;
+  }
+  .wid-80pc {
+    width: 100%;
+  }
+  .gc-3 {
+    margin: 0;
+  }
+}
